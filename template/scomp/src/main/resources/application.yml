@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: scomp
+  profiles:
+     active: local
+
+camel:
+  servlet:
+    mapping:
+      context-path: /camel/*
+  component:
+    servlet:
+      enabled: true
+      mapping:
+        context-path: /camel/*
+  #springboot:
+    #main-run-controller: true
+
+
