@@ -24,7 +24,5 @@ How to Use?
      "message": "Hello. Welcome to Camel World!"
    }
    
-9
-   
 
 
