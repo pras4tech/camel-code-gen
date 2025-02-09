@@ -1,0 +1,53 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.4.1'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.eprise.sapp.smod'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.apache.camel.springboot:camel-spring-boot-starter:4.9.0'
+	implementation 'org.apache.camel.springboot:camel-servlet-starter:4.9.0'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.apache.camel:camel-http:4.9.0'
+	implementation 'org.apache.camel:camel-jackson:4.9.0'
+	//compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'com.oracle.database.jdbc:ojdbc11'
+	//annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// Additional Dependencies
+	// Spring JDBC
+	implementation 'org.springframework:spring-jdbc'
+	// SQL Server
+	implementation 'com.microsoft.sqlserver:mssql-jdbc:12.2.0.jre8'
+	// Salesforce
+	implementation 'org.apache.camel:camel-salesforce:4.9.0'
+
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost;databaseName=springbootdb
+    username: sa
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: testpass
+
+
+salesforce:
+  USERNAME_PASWORD:
+    loginUrl: http://test.salesforce.com
+    clientId: CLIENT_ID
+    clientSecret: CLIENT_SECRET
+    grant: PASSWORD
+    apiVersion: 61.0
+    proxyHost: PROXYHOST
+    proxyPort: PROXYPORT
+  event:
+    channel: /event/CHANNEL
