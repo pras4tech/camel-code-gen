@@ -26,8 +26,8 @@ How to Use?
 
 # Additional Connectors
 9. Refer special-connectors branch for more connectors
-9.1 SQL Server: Update the SQL Server connector properties in application-local.yaml. SampleProcessor.java has sample JdbcTemplate code.
-9.2 Salesforce: Update the Salesforce connector properteis in application-local.yaml. SampleRoute.java has sample platform event code.
+10. SQL Server: Update the SQL Server connector properties in application-local.yaml. SampleProcessor.java has sample JdbcTemplate code.
+11. Salesforce: Update the Salesforce connector properteis in application-local.yaml. SampleRoute.java has sample platform event code.
    
 
 
