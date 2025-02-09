@@ -23,6 +23,11 @@ How to Use?
      "status": "success",
      "message": "Hello. Welcome to Camel World!"
    }
+
+# Additional Connectors
+9. Refer special-connector branch for more connectors
+    9.1 SQL Server: Update the SQL Server connector properties in application-local.yaml. SampleProcessor.java has sample JdbcTemplate code.
+    9.2 Salesforce: Update the Salesforce connector properteis in application-local.yaml. SampleRoute.java has sample platform event code.
    
 
 
